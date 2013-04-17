@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Imprimir Etiquetas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="STYLESHEET" href="../css/default.css" type="text/css">
+</head>
+<body>
+<form id="form1" name="form1" method="post" action="consultar.php">
+Nombre: <input type="text" name="nombre" id="nombre" required/>
+Edad:<input type="range" max="100" min="5" name="edad" id="edad" />
+<output onformchange="value = edad.value">0</output>
+E-mail:<input type="email" name="email" id="email" required/>
+Web:<input type="url" name="web" id="web" required/>
+<input type="submit" name="enviar" id="enviar" value="Enviar">
+</form>
+</body>
+</html> 
