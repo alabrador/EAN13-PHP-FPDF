@@ -47,10 +47,10 @@
 				endif;
 				?>
             </ul>
-            <p id="success" class="<?php echo ($sr && $cf['form_ok']) ? 'visible' : ''; ?>">Imprimiendo!</p>
-            <form method="post" action="etiq_pequena.php">
+            <p id="success" class="<?php echo ($sr && $cf['form_ok']) ? 'visible' : ''; ?>">Imprimiendo etiqueta, Espere...</p>
+            <form method="post" action="process.php">
                 <label for="name">Codigo: <span class="required">*</span></label>
-                <input type="text" id="code1" name="code" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['code'] : '' ?>" placeholder="Ingrese codigo de etiqueta" required autofocus />
+                <input type="text" id="code" name="code" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['code'] : '' ?>" placeholder="Ingrese codigo de etiqueta" required autofocus />
          
                 <label for="tipo_etiq">Tipo de Etiqueta: </label>
                 <select id="tipo_etiq" name="tipo_etiq">

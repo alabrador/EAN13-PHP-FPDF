@@ -30,7 +30,7 @@
   // -------------------------------------------------- //
   
   $fontSize = 6;
-  $marge    = -5;   // between barcode and hri in pixel
+  $marge    = -4;   // between barcode and hri in pixel
   $x        = 25;  // barcode center
   $y        = 9;  // barcode center
   $height   = 6;   // barcode height in 1D ; module size in 2D
@@ -44,60 +44,60 @@
   //                  PROPIEDADES2
   // -------------------------------------------------- //
   
-  $marge2    = -5;   // between barcode and hri in pixel
-  $x2        = 75;  // barcode center
-  $y2        = 9;  // barcode center
-  $code2     = '1000000253536';
+  //$marge2    = -5;   // between barcode and hri in pixel
+  //$x2        = 75;  // barcode center
+  //$y2        = 9;  // barcode center
+  //$code2     = 'code';
   // -------------------------------------------------- //
   //                  PROPIEDADES3
   // -------------------------------------------------- //
   
-  $marge3    = -5;   // between barcode and hri in pixel
-  $x3        = 25;  // barcode center
-  $y3        = 21;  // barcode center
-  $code3     = '1000000253537';
+  //$marge3    = -5;   // between barcode and hri in pixel
+  //$x3        = 25;  // barcode center
+  //$y3        = 21;  // barcode center
+  //$code3     = 'code';
   // -------------------------------------------------- //
   //                  PROPIEDADES4
   // -------------------------------------------------- //
   
-  $marge4    = -5;   // between barcode and hri in pixel
-  $x4        = 75;  // barcode center
-  $y4        = 21;  // barcode center
-  $code4     = '1000000253538';
+  //$marge4    = -5;   // between barcode and hri in pixel
+  //$x4        = 75;  // barcode center
+  //$y4        = 21;  // barcode center
+  //$code4     = 'code';
  // -------------------------------------------------- //
   //                  PROPIEDADES5
   // -------------------------------------------------- //
   
-  $marge5    = -5;   // between barcode and hri in pixel
-  $x5        = 25;  // barcode center
-  $y5        = 33;  // barcode center
-  $code5     = '1000000253539';
+  //$marge5    = -5;   // between barcode and hri in pixel
+  //$x5        = 25;  // barcode center
+  //$y5        = 33;  // barcode center
+  //$code5     = 'code';
   // -------------------------------------------------- //
   //                  PROPIEDADES6
   // -------------------------------------------------- //
   
-  $marge6    = -5;   // between barcode and hri in pixel
-  $x6        = 75;  // barcode center
-  $y6        = 33;  // barcode center
-  $code6     = '1000000253540';
+  //$marge6    = -5;   // between barcode and hri in pixel
+  //$x6        = 75;  // barcode center
+  //$y6        = 33;  // barcode center
+  //$code6     = '1000000253540';
   
   // -------------------------------------------------- //
   //                  PROPIEDADES7
   // -------------------------------------------------- //
   
-  $marge7    = -5;   // between barcode and hri in pixel
-  $x7        = 25;  // barcode center
-  $y7        = 45;  // barcode center
-  $code7     = '1000000253541';
+  //$marge7    = -5;   // between barcode and hri in pixel
+  //$x7        = 25;  // barcode center
+  //$y7        = 45;  // barcode center
+  //$code7     = 'code';
   
   // -------------------------------------------------- //
   //                  PROPIEDADES8
   // -------------------------------------------------- //
   
-  $marge8    = -5;   // between barcode and hri in pixel
-  $x8        = 75;  // barcode center
-  $y8        = 45;  // barcode center
-  $code8     = '1000000253542';
+  //$marge8    = -5;   // between barcode and hri in pixel
+  //$x8        = 75;  // barcode center
+  //$y8        = 45;  // barcode center
+  //$code8     = '1000000253542';
   
   
   // -------------------------------------------------- //
@@ -121,26 +121,26 @@
   $pdf->Rect(51, 40, 50, 12, 'D');
 
   
-  $pdf->SetFont('Arial','B',6);
-  $pdf->Text(67,14,$code2,'','','C');
+  //$pdf->SetFont('Arial','B',6);
+  //$pdf->Text(67,14,$code2,'','','C');
   
-  $pdf->SetFont('Arial','B',6);
-  $pdf->Text(17,26,$code3,'','','C');
+  //$pdf->SetFont('Arial','B',6);
+  //$pdf->Text(17,26,$code3,'','','C');
   
-  $pdf->SetFont('Arial','B',6);
-  $pdf->Text(67,26,$code4,'','','C');
+  //$pdf->SetFont('Arial','B',6);
+  //$pdf->Text(67,26,$code4,'','','C');
   
-  $pdf->SetFont('Arial','B',6);
-  $pdf->Text(17,38,$code5,'','','C');
+  //$pdf->SetFont('Arial','B',6);
+  //$pdf->Text(17,38,$code5,'','','C');
   
-  $pdf->SetFont('Arial','B',6);
-  $pdf->Text(67,38,$code6,'','','C');
+  //$pdf->SetFont('Arial','B',6);
+  //$pdf->Text(67,38,$code6,'','','C');
   
-  $pdf->SetFont('Arial','B',6);
-  $pdf->Text(17,50,$code7,'','','C');
+  //$pdf->SetFont('Arial','B',6);
+  //$pdf->Text(17,50,$code7,'','','C');
   
-  $pdf->SetFont('Arial','B',6);
-  $pdf->Text(67,50,$code8,'','','C');
+  //$pdf->SetFont('Arial','B',6);
+  //$pdf->Text(67,50,$code8,'','','C');
   
   
   // -------------------------------------------------- //
@@ -148,13 +148,13 @@
   // -------------------------------------------------- //
   
   $data = Barcode::fpdf($pdf, $black, $x, $y, $angle, $type, array('code'=>$code), $width, $height);
-  $data = Barcode::fpdf($pdf, $black, $x2, $y2, $angle, $type, array('code'=>$code2), $width, $height);
-  $data = Barcode::fpdf($pdf, $black, $x3, $y3, $angle, $type, array('code'=>$code3), $width, $height);
-  $data = Barcode::fpdf($pdf, $black, $x4, $y4, $angle, $type, array('code'=>$code4), $width, $height);
-  $data = Barcode::fpdf($pdf, $black, $x5, $y5, $angle, $type, array('code'=>$code5), $width, $height);
-  $data = Barcode::fpdf($pdf, $black, $x6, $y6, $angle, $type, array('code'=>$code6), $width, $height);
-  $data = Barcode::fpdf($pdf, $black, $x7, $y7, $angle, $type, array('code'=>$code7), $width, $height);
-  $data = Barcode::fpdf($pdf, $black, $x8, $y8, $angle, $type, array('code'=>$code8), $width, $height);
+  //$data = Barcode::fpdf($pdf, $black, $x2, $y2, $angle, $type, array('code'=>$code2), $width, $height);
+  //$data = Barcode::fpdf($pdf, $black, $x3, $y3, $angle, $type, array('code'=>$code3), $width, $height);
+  //$data = Barcode::fpdf($pdf, $black, $x4, $y4, $angle, $type, array('code'=>$code4), $width, $height);
+  //$data = Barcode::fpdf($pdf, $black, $x5, $y5, $angle, $type, array('code'=>$code5), $width, $height);
+  //$data = Barcode::fpdf($pdf, $black, $x6, $y6, $angle, $type, array('code'=>$code6), $width, $height);
+  //$data = Barcode::fpdf($pdf, $black, $x7, $y7, $angle, $type, array('code'=>$code7), $width, $height);
+  //$data = Barcode::fpdf($pdf, $black, $x8, $y8, $angle, $type, array('code'=>$code8), $width, $height);
   
   // -------------------------------------------------- //
   //                      HRI
