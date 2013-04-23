@@ -47,9 +47,9 @@
   $nombre   = 'PILA ALKAL AAA DURACEL BLISTER 2PILAS';
   $cantidad = '1';
   $codigo   = '08-28-97';
-  $code2    = '1000000253533';
-  $code3    = '1000000253533';
-  $code4    = '1000000253533';
+  $code2    = $_POST['code'];
+  $code3    = $_POST['code'];
+  $code4    = $_POST['code'];
 //  $desc1    = $_POST['desc1'];
 //  $desc2    = $_POST['desc2'];
 //  $desc3    = $_POST['desc3'];
@@ -195,9 +195,9 @@
   // -------------------------------------------------- //
   
   $data = Barcode::fpdf($pdf, $black, $x, $y, $angle, $type, array('code'=>$code), $width, $height);
-  $data = Barcode::fpdf($pdf, $black, $x2, $y2, $angle, $type, array('code'=>$code2), $width, $height);
-  $data = Barcode::fpdf($pdf, $black, $x3, $y3, $angle, $type, array('code'=>$code3), $width, $height);
-  $data = Barcode::fpdf($pdf, $black, $x4, $y4, $angle, $type, array('code'=>$code4), $width, $height);
+  $data = Barcode::fpdf($pdf, $black, $x2, $y2, $angle, $type, array('code2'=>$code2), $width, $height);
+  $data = Barcode::fpdf($pdf, $black, $x3, $y3, $angle, $type, array('code3'=>$code3), $width, $height);
+  $data = Barcode::fpdf($pdf, $black, $x4, $y4, $angle, $type, array('code4'=>$code4), $width, $height);
   
   // -------------------------------------------------- //
   //                      HRI
